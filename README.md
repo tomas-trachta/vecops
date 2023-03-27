@@ -14,3 +14,6 @@ Classes:
     `Rotation`
     `Scale`
     `Translation`
+   
+Installation:
+    `pip install vecops`
