@@ -110,8 +110,30 @@ class Multiplication:
         
         productMatrix = [[(vector1[1][0]*vector2[2][0]) - (vector2[1][0]*vector1[2][0])],[(vector1[2][0]*vector2[0][0]) - (vector2[2][0]*vector1[0][0])],[(vector1[0][0]*vector2[1][0])-(vector2[0][0]*vector1[1][0])]]
         return productMatrix
+    
+    @staticmethod
+    def dotProduct2D(vector1 : list[list[int]], vector2 : list[list[int]]) -> int:
+        '''Multiplies given 2D vectors
+           Input matrices format: [[x],[y]]'''
         
-
+        if len(vector1)!=2 or len(vector2)!= 2:
+            print("Wrong dimensions!")
+            return
+        
+        productMatrix = (vector1[0][0] * vector2[0][0]) + (vector1[1][0] * vector2[1][0])
+        return productMatrix
+        
+    @staticmethod
+    def dotProduct3D(vector1 : list[list[int]], vector2 : list[list[int]]) -> int:
+        '''Multiplies given 3D vectors
+           Input matrices format: [[x],[y],[z]]'''
+        
+        if len(vector1)!=3 or len(vector2)!= 3:
+            print("Wrong dimensions!")
+            return
+        
+        productMatrix = ((vector1[0][0] * vector2[0][0]) + (vector1[1][0] * vector2[1][0]) + (vector1[2][0] * vector2[2][0]))
+        return productMatrix
         
 
 
