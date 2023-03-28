@@ -4,11 +4,11 @@ build-backend = "hatchling.build"
 
 [project]
 name = "vecops"
-version = "1.1.0"
+version = "1.2.3"
 authors = [
   { name="Tomáš Trachta"},
 ]
-description = "A small library for for vector and matrix operations in vector spaces."
+description = "A small library for vector and matrix operations in vector spaces."
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
