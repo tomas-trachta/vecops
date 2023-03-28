@@ -1,5 +1,5 @@
-from multiplication import Multiplication
-from subtraction import Subtraction
+from vecops.multiplication import Multiplication
+from vecops.subtraction import Subtraction
 
 class Reflection:
 

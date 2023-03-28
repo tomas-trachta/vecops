@@ -33,7 +33,7 @@ class Subtraction:
     
     @staticmethod
     def subtractVectors(A : list[list[int]], B : list[list[int]]) -> list[list[int]]:
-        '''Subtract give vector A from vector B and return result as a new vector'''
+        '''Subtract given vector B from vector A and return result as a new vector'''
 
         if len(A) != len(B):
             print("Invalid dimensions!")

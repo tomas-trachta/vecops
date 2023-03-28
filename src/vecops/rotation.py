@@ -1,4 +1,4 @@
-from multiplication import Multiplication
+from vecops.multiplication import Multiplication
 from math import sin, cos, pi
 
 class Rotation:

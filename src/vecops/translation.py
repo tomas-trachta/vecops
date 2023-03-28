@@ -1,4 +1,4 @@
-from addition import Addition
+from vecops.addition import Addition
 
 class Translation:
     @staticmethod

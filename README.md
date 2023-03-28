@@ -3,7 +3,7 @@
 This is a simple library for basic operations in vector spaces.
 
 Usage:
-    `from vecops import addition`
+    `from vecops.Addition import addition`
 Calling method:
     `Addition.someMethod()`
 
@@ -15,6 +15,8 @@ Classes:
     `Scale`
     `Translation`
     `Reflection`
+    `Length`
+    `Distance`
    
 Installation:
     `pip install vecops`
