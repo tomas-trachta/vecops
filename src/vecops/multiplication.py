@@ -32,30 +32,18 @@ class Multiplication:
         return Matrix
 
     @staticmethod
-    def multiplyByScalar(s:float,A:list[list[int]]) -> list[list[int]]:
-        '''Multiplies every element of a given matrix [A] by given scalar [s] and returns result as a new matrix.'''
-
-        Matrix = [[0 for x in range(len(A[0]))] for y in range(len(A))]
-
-        for i in range(0,len(A)):
-            for j in range(0,len(A[0])):
-                Matrix[i][j] = s * A[i][j]
-
-        return Matrix  
-
-    @staticmethod
-    def multiplyByVector(Vec:list, A:list[list[int]]) -> list[list[int]]:
+    def multiplyByVector(Vec:list[list[int]], A:list[list[int]]) -> list[list[int]]:
         '''Multiplies given matrix [A] by given vector [Vec] and returns result as a new matrix.'''
 
         if len(Vec) != len(A[0]):
             print("Invalid dimensions!")
             return
 
-        Matrix = [[0 for x in range(len(A[0]))] for y in range(len(A))]
+        Matrix = [[0 for x in range(1)] for y in range(len(A))]
         
         for i in range(0,len(A)):
-            for j in range(0,len(Vec)):
-                Matrix[i][j] = A[i][j] * Vec[j]
+            for j in range(0,len(Vec[0])):
+                Matrix[i][j] = A[i][j] * Vec[i][0]
                 
         return Matrix
 
