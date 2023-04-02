@@ -17,6 +17,7 @@ Classes:
     `Reflection`
     `Length`
     `Distance`
+    `Clamp`
    
 Installation:
     `pip install vecops`
